@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda Web Basico</title>
+    <link rel="stylesheet" href="resources/styles/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 </head>
 <script>
     $(document).ready(function () {
@@ -27,212 +30,641 @@
     });
 </script>
 
-<body style="background-color: white;height: 1000px;overflow-y: scroll;">
-    <header class="goto">
-        <a href="index.html"> <img src="resources/img/logo-ishop_.png" /></a>
-    </header>
-    <nav  style="background-color:  black;">
-        <div class="topnav" style="background-color: black;width: 60%;height: 60px;padding-top: 20px;color: white;">
-            <button href="index.html" style="padding-left: 20px;padding-right: 20px;font-size: 36px;color: #f39200;background-color: transparent;
-            border: none;">Inicio</button>
-            <button href="#news" style="padding-left: 20px;padding-right: 20px;font-size: 26px;color: white;background-color: transparent;
-            border: none;">Iphone 12 Pro <strong>MAX</strong></button>
-            <button href="#contact" style="padding-left: 20px;padding-right: 20px;font-size: 26px;color: white;background-color: transparent;
-            border: none;">MacBook</button>
-            <button href="#about" style="padding-left: 20px;padding-right: 20px;font-size: 26px;color: white;background-color: transparent;
-            border: none;">IMac</button>
-            <button style="position: absolute;padding-left: 20px;padding-right: 20px;font-size: 30px;color: red;color: red;
-            background-color: transparent;
-            border: none;    margin-top: 4px;">Ver Descuentos $</button>
-            <a title="Go to page" href="https://www.apple.com/"><img src="resources/img/apple.png" style="width: 50px;    position: absolute;
-                margin-left: 700px;    margin-top: -10px;" /></a>
-            <a title="Ir al carro de compras" href="#"><img src="resources/img/markercar.png" style="width: 50px;    position: absolute;
-                    margin-left: 760px;    margin-top: -5px;" /></a>
-        </div>
-    </nav>
-    <main style="background-color:    whitesmoke   ;width: 100%;height: auto;">
-        <article>
-            <div class="slideshow-container" style="margin-left: 300px;">
-
-                <div class="mySlides fade">
-                    <div class="numbertext">1 / 3</div>
-                    <div class="card">
-                        <div>
- 
-
-                            <img src="resources/img/IMACREF.jpg" style="width: 800px;height: 600px;" />
-                        </div>
-                        <div style="margin-left: 150px;">
-                            <h4 style="font-size: 28px;margin-left: 20px;">IMAC Pro <strong> RAM 8GB - 256GB
-                                    ROSA</strong></h4>
-                            <h1 style="font-size: 32px;margin-left: 120px;color: tomato;">$8.099.000</h1>
-                        </div>
-                        <div> 
-                            <div style="width: 700px;margin-left: 40px;">
+<body>
+    <div class="container-fluid" style="padding: 0px;">
+        <header class="goto">
+            <a href="index.html"> <img src="resources/img/logo-ishop_.png" /></a>
+        </header>
+        <!-- <nav>
+            <div class="topnav">
+                <button href="index.html">Inicio</button>
+                <button href="#news">Iphone 12 Pro <strong>MAX</strong></button>
+                <button href="#contact">MacBook</button>
+                <button href="#about">IMac</button>
+                <button>Ver Descuentos $</button>
+                <a title="Go to page" href="https://www.apple.com/"><img src="resources/img/apple.png" /></a>
+                <a title="Ir al carro de compras" href="#"><img src="resources/img/markercar.png" /></a>
+            </div>
+            <button type="button" class="btn btn-primary">Primary</button>
+        </nav> -->
+        <nav class="navbar navbar-expand-lg navbar navbar-dark " style="background-color:black">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#" style="font-weight: bold;color: #f39200;">INICIO</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#">Iphone 12 Pro
+                                <strong>MAX</strong></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">MacBook</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">IMac</a>
+                        </li>
 
 
-                                <p style="font-size: 18px;">El iMac con pantalla Retina 5K de 27 pulgadas está diseñado
-                                    con las siguientes
-                                    características
-                                    para reducir el impacto ambiental.Las instalaciones de ensamblaje final de nuestros
-                                    proveedores no generan residuos que se desechen en basureros6
-                                    Todos los proveedores encargados del ensamblaje final están haciendo la transición
-                                    hacia el
-                                    uso de energía 100% renovable en los procesos de fabricación de productos Apple:</p>
-                            </div>
-                            <div style="margin-left: 80px;"></div>
-
-
-                            <p style="font-size: 20px;margin-left: 40px;"><strong>Fabricado con los mejores
-                                    materiales</strong> </p>
-                        </div>
-                        <ul style="font-size: 14px;margin-left: 40px;">
-                            <li>Tarjeta madre soldada con estaño 100% reciclado</li>
-
-                            <li>Carcasa de aluminio reciclado de bajo carbono</li>
-
-                            <li>Varios componentes con un 60% o más de plástico reciclado</li>
-
-
-                        </ul>
-                    </div>
-
+                    </ul>
                 </div>
-
-
-
-
-                <div class="mySlides fade">
-                    <div class="numbertext">2 / 3</div>
-                    <div class="card">
-                        <div>
-
-
-                            <img src="resources/img/iphone12gold.jpg" style="width: 800px;height: 700px;" />
-                        </div>
-                        <div style="margin-left: 150px;">
-                            <h4 style="font-size: 28px;margin-left: 20px;">Iphone 12 PRO <strong> MAX GOLD 128GB
-                                </strong></h4>
-                            <h1 style="font-size: 32px;margin-left: 120px;color: tomato;">$5.899.000</h1>
-                        </div>
-                        <div>
-                            <div style="width: 700px;margin-left: 40px;">
-
-
-                                <p style="font-size: 18px;">El chip A14 Bionic es muy superior a cualquier otro chip de
-                                    smartphone. El sistema de cámaras Pro te permite tomar fotos espectaculares con poca
-                                    luz, y el iPhone 12 Pro Max lleva tu talento fotográfico mucho más allá. Además, el
-                                    nuevo frente de Ceramic Shield es cuatro veces más resistente a las caídas. Descubre
-                                    todo lo que el iPhone 12 Pro hace para llevarte al siguiente nivel.</p>
-                            </div>
-                            <div style="margin-left: 80px;"></div>
-
-
-                            <p style="font-size: 20px;margin-left: 40px;"><strong>2 años de garantia directamente con la
-                                    tienda</strong> </p>
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-
-
-                <div class="mySlides fade">
-                    <div class="numbertext">3 / 3</div>
-                    <div class="card">
-                        <div>
-
-
-                            <img src="resources/img/macbookpro.jpeg" style="width: 800px;height: 600px;" />
-                        </div>
-                        <div style="margin-left: 150px;">
-                            <h4 style="font-size: 28px;margin-left: 20px;">IMAC Pro <strong> RAM 8GB - 256GB
-                                    ROSA</strong></h4>
-                            <h1 style="font-size: 32px;margin-left: 120px;color: tomato;">$8.099.000</h1>
-                        </div>
-                        <div>
-                            <div style="width: 700px;margin-left: 40px;">
-
-
-                                <p style="font-size: 18px;">El MacBook Pro de 16 pulgadas es sin duda el notebook más
-                                    poderoso de Apple, pensado para quienes están dispuestos a desafiar los límites y
-                                    cambiar el mundo. Tiene una envolvente pantalla Retina, procesadores superrápidos,
-                                    gráficas avanzadas, la batería de mayor capacidad en un MacBook Pro hasta ahora, un
-                                    teclado Magic Keyboard y un increíble espacio de almacenamiento. Es el notebook más
-                                    avanzado de la línea Pro y es perfecto para los usuarios más pro.</p>
-                            </div>
-                            <div style="margin-left: 40px;width: 700px;">
-
-
-                                <p style="font-size: 20px;margin-left: 00px;"><strong>Pantalla de 16 pulgadas (diagonal)
-                                        retroiluminada por LED con tecnología IPS; resolución nativa de 3072 x 1920 a
-                                        226
-                                        pixeles por pulgada compatible con millones de colores</strong> </p>
-                            </div>
-                        </div>
-                        <ul style="font-size: 14px;margin-left: 40px;">
-                            <li>2048 x 1280</li>
-
-                            <li>1792 x 1120</li>
-
-                            <li>1344 x 840</li>
-
-
-                        </ul>
-                    </div>
-
+                <div class="text-right">
+                    <a title="Registrar productos de inventario" style="color: white;font-weight: 500;" href="registrar_producto.html"><img src="resources/img/register.png"
+                        style="width: 40px;" />Registrar productos</a>
+                    <a title="Ir a la tienda Oficial" href="https://www.apple.com/"><img src="resources/img/apple.png"
+                            style="width: 40px;" /></a>
+                    <a title="Ir al carro de compras" href="#"><img src="resources/img/markercar.png"
+                            style="width: 40px;" /></a>
                 </div>
             </div>
+        </nav>
 
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <main style="background-color: black;">
+            <article style="background-color: black;">
+                <div class="container-fluid " style="padding-top: 0%;">
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <!-- data-bs-ride="carousel" -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="itemsSlide">
+                                    <div>
 
+
+                                        <img src="resources/img/iphone12gold.jpg" style="margin-left: 25%;" width="600"
+                                            height="600" class="d-block w-50" alt="...">
+                                    </div>
+                                    <div class="itemInformation">
+                                        <h4 class="itemTitle">IPHONE 12 Pro <strong> MAX 128GB ORO
+                                            </strong></h4>
+                                        <h1 class="itemPrice">$5.899.000</h1>
+
+                                        <p class="itemInfo">
+                                            El chip A14 Bionic es muy superior a cualquier otro chip de smartphone. El
+                                            sistema de cámaras Pro te permite tomar fotos espectaculares con poca luz, y
+                                            el iPhone 12 Pro Max lleva tu talento fotográfico mucho más allá. Además, el
+                                            nuevo frente de Ceramic Shield es cuatro veces más resistente a las caídas.
+                                            Descubre todo lo que el iPhone 12 Pro hace para llevarte al siguiente nivel.
+                                        </p>
+                                        <p class="itemInfo">
+                                            El chip A14 Bionic es el primer chip de 5 nanómetros de la industria, con
+                                            componentes avanzados que tienen el tamaño de un átomo. Además, tiene un 40%
+                                            más de transistores para aumentar su velocidad y eficiencia y lograr que la
+                                            batería te acompañe por mucho tiempo. Y su nuevo ISP te permite grabar video
+                                            en Dolby Vision, algo que ningún otro teléfono ni cámara profesional puede
+                                            hacer.
+                                        </p>
+
+
+
+                                        <h5 class="itemSubtitle"><strong>A años luz de los otros chips de
+                                                smartphone</strong> </h5>
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="carousel-item ">
+                                <div class="itemsSlide">
+                                    <div>
+
+                                        <img src="resources/img/iphone12Referencias.jpg" style="margin-left: 25%;"
+                                            width="600" height="600" class="d-block w-50" alt="...">
+                                    </div>
+                                    <div class="itemInformation">
+                                        <h4 class="itemTitle">IPHONE 12 Pro <strong> MAX 256GB
+                                            </strong></h4>
+                                        <h1 class="itemPrice">$6.449.000</h1>
+
+                                        <p class="itemInfo">
+                                            El chip A14 Bionic es muy superior a cualquier otro chip de smartphone. El
+                                            sistema de cámaras Pro te permite tomar fotos espectaculares con poca luz, y
+                                            el iPhone 12 Pro Max lleva tu talento fotográfico mucho más allá. Además, el
+                                            nuevo frente de Ceramic Shield es cuatro veces más resistente a las caídas.
+                                            Descubre todo lo que el iPhone 12 Pro hace para llevarte al siguiente nivel.
+                                        </p>
+                                        <p class="itemInfo">
+                                            El chip A14 Bionic es el primer chip de 5 nanómetros de la industria, con
+                                            componentes avanzados que tienen el tamaño de un átomo. Además, tiene un 40%
+                                            más de transistores para aumentar su velocidad y eficiencia y lograr que la
+                                            batería te acompañe por mucho tiempo. Y su nuevo ISP te permite grabar video
+                                            en Dolby Vision, algo que ningún otro teléfono ni cámara profesional puede
+                                            hacer.
+                                        </p>
+
+
+
+                                        <h5 class="itemSubtitle"><strong>A años luz de los otros chips de
+                                                smartphone</strong> </h5>
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="carousel-item">
+
+                                <div class="itemsSlide">
+                                    <div>
+
+                                        <img src="resources/img/iphone12gblue.jpg" style="margin-left: 25%;" width="600"
+                                            height="600" class="d-block w-50" alt="...">
+                                    </div>
+                                    <div class="itemInformation">
+                                        <h4 class="itemTitle">IPHONE 12 Pro <strong> MAX 256GB AZUL
+                                            </strong></h4>
+                                        <h1 class="itemPrice">$6.449.000</h1>
+
+                                        <p class="itemInfo">
+                                            El chip A14 Bionic es muy superior a cualquier otro chip de smartphone. El
+                                            sistema de cámaras Pro te permite tomar fotos espectaculares con poca luz, y
+                                            el iPhone 12 Pro Max lleva tu talento fotográfico mucho más allá. Además, el
+                                            nuevo frente de Ceramic Shield es cuatro veces más resistente a las caídas.
+                                            Descubre todo lo que el iPhone 12 Pro hace para llevarte al siguiente nivel.
+                                        </p>
+                                        <p class="itemInfo">
+                                            El chip A14 Bionic es el primer chip de 5 nanómetros de la industria, con
+                                            componentes avanzados que tienen el tamaño de un átomo. Además, tiene un 40%
+                                            más de transistores para aumentar su velocidad y eficiencia y lograr que la
+                                            batería te acompañe por mucho tiempo. Y su nuevo ISP te permite grabar video
+                                            en Dolby Vision, algo que ningún otro teléfono ni cámara profesional puede
+                                            hacer.
+                                        </p>
+
+
+
+                                        <h5 class="itemSubtitle"><strong>A años luz de los otros chips de
+                                                smartphone</strong> </h5>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item ">
+
+                                <div class="itemsSlide">
+                                    <div>
+
+                                        <img src="resources/img/MACBOOKPRO.jpg" style="margin-left: 25%;" width="600"
+                                            height="600" class="d-block w-50" alt="...">
+                                    </div>
+                                    <div class="itemInformation">
+                                        <h4 class="itemTitle">MacBook Pro 16 (2019)<strong> Touch Bar - Intel i7 de 2.6
+                                                GHz - RAM 16GB - 512GB
+                                            </strong></h4>
+                                        <h1 class="itemPrice">$11.799.000</h1>
+
+                                        <p class="itemInfo">
+                                            El MacBook Pro de 16 pulgadas es sin duda el notebook más poderoso de Apple,
+                                            pensado para quienes están dispuestos a desafiar los límites y cambiar el
+                                            mundo. Tiene una envolvente pantalla Retina, procesadores superrápidos,
+                                            gráficas avanzadas, la batería de mayor capacidad en un MacBook Pro hasta
+                                            ahora, un teclado Magic Keyboard y un increíble espacio de almacenamiento.
+                                            Es el notebook más avanzado de la línea Pro y es perfecto para los usuarios
+                                            más pro.
+                                        </p>
+                                        <p class="itemInfo">
+                                            Gracias a la retroiluminación LED de banda estrecha, el MacBook Pro
+                                            reproduce la amplia gama de colores P3 para que los colores se vean más
+                                            realistas y brillantes en fotos y videos.
+                                        </p>
+
+
+
+                                        <h5 class="itemSubtitle"><strong>Procesador y memoria,
+                                                Velocidad para que tus ideas lleguen más lejos.</strong> </h5>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+
+                                <div class="itemsSlide">
+                                    <div>
+
+                                        <img src="resources/img/macbookpro.jpeg" style="margin-left: 12%;" width="600"
+                                            height="600" class="d-block w-75" alt="...">
+                                    </div>
+                                    <div class="itemInformation">
+                                        <h4 class="itemTitle">MacBook Pro 16 (2019)<strong> Touch Bar - Intel i7 de 2.6
+                                                GHz - RAM 16GB - 512GB
+                                            </strong></h4>
+                                        <h1 class="itemPrice">$11.799.000</h1>
+
+                                        <p class="itemInfo">
+                                            El MacBook Pro de 16 pulgadas es sin duda el notebook más poderoso de Apple,
+                                            pensado para quienes están dispuestos a desafiar los límites y cambiar el
+                                            mundo. Tiene una envolvente pantalla Retina, procesadores superrápidos,
+                                            gráficas avanzadas, la batería de mayor capacidad en un MacBook Pro hasta
+                                            ahora, un teclado Magic Keyboard y un increíble espacio de almacenamiento.
+                                            Es el notebook más avanzado de la línea Pro y es perfecto para los usuarios
+                                            más pro.
+                                        </p>
+                                        <p class="itemInfo">
+                                            Gracias a la retroiluminación LED de banda estrecha, el MacBook Pro
+                                            reproduce la amplia gama de colores P3 para que los colores se vean más
+                                            realistas y brillantes en fotos y videos.
+                                        </p>
+
+
+
+                                        <h5 class="itemSubtitle"><strong>Procesador y memoria,
+                                                Velocidad para que tus ideas lleguen más lejos.</strong> </h5>
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="carousel-item">
+
+                                <div class="itemsSlide">
+                                    <div>
+
+                                        <img src="resources/img/macbookpro2.jpg" style="margin-left: 12%;" width="600"
+                                            height="600" class="d-block w-75" alt="...">
+                                    </div>
+                                    <div class="itemInformation">
+                                        <h4 class="itemTitle">MacBook Pro 16 (2019)<strong> Touch Bar - Intel i7 de 2.6
+                                                GHz - RAM 16GB - 512GB
+                                            </strong></h4>
+                                        <h1 class="itemPrice">$11.799.000</h1>
+
+                                        <p class="itemInfo">
+                                            El MacBook Pro de 16 pulgadas es sin duda el notebook más poderoso de Apple,
+                                            pensado para quienes están dispuestos a desafiar los límites y cambiar el
+                                            mundo. Tiene una envolvente pantalla Retina, procesadores superrápidos,
+                                            gráficas avanzadas, la batería de mayor capacidad en un MacBook Pro hasta
+                                            ahora, un teclado Magic Keyboard y un increíble espacio de almacenamiento.
+                                            Es el notebook más avanzado de la línea Pro y es perfecto para los usuarios
+                                            más pro.
+                                        </p>
+                                        <p class="itemInfo">
+                                            Gracias a la retroiluminación LED de banda estrecha, el MacBook Pro
+                                            reproduce la amplia gama de colores P3 para que los colores se vean más
+                                            realistas y brillantes en fotos y videos.
+                                        </p>
+
+
+
+                                        <h5 class="itemSubtitle"><strong>Procesador y memoria,
+                                                Velocidad para que tus ideas lleguen más lejos.</strong> </h5>
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="carousel-item ">
+
+                                <div class="itemsSlide">
+                                    <div>
+
+                                        <img src="resources/img/imac.jpg" style="margin-left: 25%;" width="600"
+                                            height="600" class="d-block w-50" alt="...">
+                                    </div>
+                                    <div class="itemInformation">
+                                        <h4 class="itemTitle">IMAC Pro <strong> RAM 8GB - 256GB
+                                                ROSA</strong></h4>
+                                        <h1 class="itemPrice">$8.099.000</h1>
+
+                                        <p class="itemInfo">El iMac con pantalla Retina 5K
+                                            de 27 pulgadas
+                                            está
+                                            diseñado
+                                            con las siguientes
+                                            características
+                                            para reducir el impacto ambiental.Las instalaciones de ensamblaje final
+                                            de
+                                            nuestros
+                                            proveedores no generan residuos que se desechen en basureros6
+                                            Todos los proveedores encargados del ensamblaje final están haciendo la
+                                            transición
+                                            hacia el
+                                            uso de energía 100% renovable en los procesos de fabricación de
+                                            productos Apple:
+                                        </p>
+
+
+
+
+                                        <h5 class="itemSubtitle"><strong>Fabricado con los mejores
+                                                materiales</strong> </h5>
+                                        <ul style="color: whitesmoke;">
+                                            <li>Tarjeta madre soldada con estaño 100% reciclado</li>
+
+                                            <li>Carcasa de aluminio reciclado de bajo carbono</li>
+
+                                            <li>Varios componentes con un 60% o más de plástico reciclado</li>
+
+
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+
+                                <div class="itemsSlide">
+                                    <div>
+
+                                        <img src="resources/img/IMACREF.jpg" style="margin-left: 12%;" width="600"
+                                            height="600" class="d-block w-75" alt="...">
+                                    </div>
+                                    <div class="itemInformation">
+                                        <h4 class="itemTitle">IMAC Pro <strong> RAM 8GB - 256GB
+                                            </strong></h4>
+                                        <h1 class="itemPrice">$8.099.000</h1>
+
+                                        <p class="itemInfo">El iMac con pantalla Retina 5K
+                                            de 27 pulgadas
+                                            está
+                                            diseñado
+                                            con las siguientes
+                                            características
+                                            para reducir el impacto ambiental.Las instalaciones de ensamblaje final
+                                            de
+                                            nuestros
+                                            proveedores no generan residuos que se desechen en basureros6
+                                            Todos los proveedores encargados del ensamblaje final están haciendo la
+                                            transición
+                                            hacia el
+                                            uso de energía 100% renovable en los procesos de fabricación de
+                                            productos Apple:
+                                        </p>
+
+
+
+
+                                        <h5 class="itemSubtitle"><strong>Fabricado con los mejores
+                                                materiales</strong> </h5>
+                                        <ul style="color: whitesmoke;">
+                                            <li>Tarjeta madre soldada con estaño 100% reciclado</li>
+
+                                            <li>Carcasa de aluminio reciclado de bajo carbono</li>
+
+                                            <li>Varios componentes con un 60% o más de plástico reciclado</li>
+
+
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+
+                                <div class="itemsSlide">
+                                    <div>
+
+                                        <img src="resources/img/imacBlue.jpg" style="margin-left: 12%;" width="600"
+                                            height="600" class="d-block w-75" alt="...">
+                                    </div>
+                                    <div class="itemInformation">
+                                        <h4 class="itemTitle">IMAC Pro <strong> RAM 8GB - 256GB AZUL
+                                            </strong></h4>
+                                        <h1 class="itemPrice">$8.099.000</h1>
+
+                                        <p class="itemInfo">El iMac con pantalla Retina 5K
+                                            de 27 pulgadas
+                                            está
+                                            diseñado
+                                            con las siguientes
+                                            características
+                                            para reducir el impacto ambiental.Las instalaciones de ensamblaje final
+                                            de
+                                            nuestros
+                                            proveedores no generan residuos que se desechen en basureros6
+                                            Todos los proveedores encargados del ensamblaje final están haciendo la
+                                            transición
+                                            hacia el
+                                            uso de energía 100% renovable en los procesos de fabricación de
+                                            productos Apple:
+                                        </p>
+
+
+
+
+                                        <h5 class="itemSubtitle"><strong>Fabricado con los mejores
+                                                materiales</strong> </h5>
+                                        <ul style="color: whitesmoke;">
+                                            <li>Tarjeta madre soldada con estaño 100% reciclado</li>
+
+                                            <li>Carcasa de aluminio reciclado de bajo carbono</li>
+
+                                            <li>Varios componentes con un 60% o más de plástico reciclado</li>
+
+
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev  border-0" style="    background-color: black!important;"
+                            type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next border-0" type="button"
+                            style="    background-color: black!important;" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Siguiente</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- <div>
+
+                    <div>
+                        <div>1 / 3</div>
+                        <div>
+                            <div>
+
+
+                                <img src="resources/img/IMACREF.jpg" />
+                            </div>
+                            <div>
+                                <h4>IMAC Pro <strong> RAM 8GB - 256GB
+                                        ROSA</strong></h4>
+                                <h1>$8.099.000</h1>
+                            </div>
+                            <div>
+                                <div>
+
+
+                                    <p>El iMac con pantalla Retina 5K de 27 pulgadas está
+                                        diseñado
+                                        con las siguientes
+                                        características
+                                        para reducir el impacto ambiental.Las instalaciones de ensamblaje final de
+                                        nuestros
+                                        proveedores no generan residuos que se desechen en basureros6
+                                        Todos los proveedores encargados del ensamblaje final están haciendo la
+                                        transición
+                                        hacia el
+                                        uso de energía 100% renovable en los procesos de fabricación de productos Apple:
+                                    </p>
+                                </div>
+                                <div></div>
+
+
+                                <p><strong>Fabricado con los mejores
+                                        materiales</strong> </p>
+                            </div>
+                            <ul>
+                                <li>Tarjeta madre soldada con estaño 100% reciclado</li>
+
+                                <li>Carcasa de aluminio reciclado de bajo carbono</li>
+
+                                <li>Varios componentes con un 60% o más de plástico reciclado</li>
+
+
+                            </ul>
+                        </div>
+
+                    </div>
+
+
+
+
+                    <div>
+                        <div>2 / 3</div>
+                        <div class="card">
+                            <div>
+
+
+                                <img src="resources/img/iphone12gold.jpg" />
+                            </div>
+                            <div>
+                                <h4>Iphone 12 PRO <strong> MAX GOLD 128GB
+                                    </strong></h4>
+                                <h1>$5.899.000</h1>
+                            </div>
+                            <div>
+                                <div>
+
+
+                                    <p>El chip A14 Bionic es muy superior a cualquier otro chip
+                                        de
+                                        smartphone. El sistema de cámaras Pro te permite tomar fotos espectaculares con
+                                        poca
+                                        luz, y el iPhone 12 Pro Max lleva tu talento fotográfico mucho más allá. Además,
+                                        el
+                                        nuevo frente de Ceramic Shield es cuatro veces más resistente a las caídas.
+                                        Descubre
+                                        todo lo que el iPhone 12 Pro hace para llevarte al siguiente nivel.</p>
+                                </div>
+                                <div></div>
+
+
+                                <p><strong>2 años de garantia directamente
+                                        con la
+                                        tienda</strong> </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+
+                    <div>
+                        <div>3 / 3</div>
+                        <div>
+                            <div>
+
+
+                                <img src="resources/img/macbookpro.jpeg" />
+                            </div>
+                            <div>
+                                <h4>IMAC Pro <strong> RAM 8GB - 256GB
+                                        ROSA</strong></h4>
+                                <h1>$8.099.000</h1>
+                            </div>
+                            <div>
+                                <div>
+
+
+                                    <p>El MacBook Pro de 16 pulgadas es sin duda el notebook
+                                        más
+                                        poderoso de Apple, pensado para quienes están dispuestos a desafiar los límites
+                                        y
+                                        cambiar el mundo. Tiene una envolvente pantalla Retina, procesadores
+                                        superrápidos,
+                                        gráficas avanzadas, la batería de mayor capacidad en un MacBook Pro hasta ahora,
+                                        un
+                                        teclado Magic Keyboard y un increíble espacio de almacenamiento. Es el notebook
+                                        más
+                                        avanzado de la línea Pro y es perfecto para los usuarios más pro.</p>
+                                </div>
+                                <div>
+
+
+                                    <p><strong>Pantalla de 16 pulgadas
+                                            (diagonal)
+                                            retroiluminada por LED con tecnología IPS; resolución nativa de 3072 x 1920
+                                            a
+                                            226
+                                            pixeles por pulgada compatible con millones de colores</strong> </p>
+                                </div>
+                            </div>
+                            <ul>
+                                <li>2048 x 1280</li>
+
+                                <li>1792 x 1120</li>
+
+                                <li>1344 x 840</li>
+
+
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <a onclick="plusSlides(-1)">&#10094;</a>
+                <a onclick="plusSlides(1)">&#10095;</a> -->
+            </article>
+            <div class="text-right">
+                <a href="#"><img src="resources/img/arrow.png" /></a>
             </div>
-            <br>
+        </main>
+        <footer>
+            <div class="container-fluid">
 
-            <div style="text-align:center">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
+                <div class="row">
+                    <div class="col">
+                        <h1>DATOS DE CONTACTO</h1>
+                        <h4>Telefono: +57 3176495021</h4>
+                        <h4>Línea gratuita: 01 8000 91 74 75</h4>
+                    </div>
+                    <div class="col">
+                        <h1>WHATSAPP <img src="resources/img/whatsappIcon.png"
+                                style="width: 25px;height: 25px;margin-top: -12px;"> </h1>
+                        <h4>Sede Cali: +57 318 732 4081</h4>
+                        <h4>Sede Medellin: +57 318 732 4587</h4>
+
+                    </div>
+
+                    <div class="col">
+                        <h1>CORREO ELECTRÓNICO</h1>
+                        <h4>tiendaapplecol@apple.co</h4>
+
+                    </div>
+                </div>
             </div>
+        </footer>
 
-
-
-
-
-
-
-        </article>
-        <div style="float: right;">
-            <a title="Ir al carro de compras" href="#"><img src="resources/img/arrow2.jpg" style="width: 50px; position: absolute;
-                margin-left: -100px;    margin-top: -100px;" /></a>
-        </div>
-    </main>
-    <footer style="background-color: black;width: 100%;height: 200px;">
-        <div style="padding-top: 15px;float: left;">
-            <h1 style="color: white;font-weight: bolder;margin-left:20px ;">DATOS DE CONTACTO</h1>
-            <h4 style="color: white;font-weight: bolder;margin-left:20px ;">Telefono: +57 3176495021</h4>
-            <h4 style="color: white;font-weight: bolder;margin-left:20px ;">Línea gratuita: 01 8000 91 74 75</h4>
-        </div>
-        <div style="padding-top: 15px;float: left;margin-left: 300px;">
-            <h1 style="color: white;font-weight: bolder;margin-left:20px ;">WHATSAPP</h1>
-            <h4 style="color: white;font-weight: bolder;margin-left:20px ;">Sede Cali: +57 318 732 4081</h4>
-            <h4 style="color: white;font-weight: bolder;margin-left:20px ;">Sede Medellin: +57 318 732 4587</h4>
-            <!-- <h4 style="color: white;font-weight: bolder;margin-left:20px ;">Sede Medellin: +57 318 732 4081</h4> -->
-            <!-- <h4 style="color: white;font-weight: bolder;margin-left:20px ;">Línea gratuita: 01 8000 91 74 75</h4> -->
-        </div>
-
-        <div style="padding-top: 15px;float: right;margin-right: 30px;">
-            <h1 style="color: white;font-weight: bolder;margin-left:20px ;">CORREO ELECTRÓNICO</h1>
-            <h4 style="color: white;font-weight: bolder;margin-left:20px ;">tiendaapplecol@apple.co</h4>
-            <!-- <h4 style="color: white;font-weight: bolder;margin-left:20px ;">Línea gratuita: 01 8000 91 74 75</h4> -->
-        </div>
-
-
-    </footer>
-    <!-- img src="/img/producto.png" -->
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

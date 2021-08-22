@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Web Basico</title>
+    <link rel="stylesheet" href="resources/styles/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+</head>
+<script>
+    $(document).ready(function () {
+
+        $('.ir-arriba').click(function () {
+            $('body, html').animate({
+                scrollTop: '0px'
+            }, 300);
+        });
+
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 0) {
+                $('.goto').slideDown(600);
+            } else {
+                $('.goto').slideUp(600);
+            }
+        });
+
+    });
+</script>
+
+<body>
+    <div class="container-fluid" style="padding: 0px;">
+        <header class="goto">
+            <a href="index.html"> <img src="resources/img/logo-ishop_.png" /></a>
+        </header>
+        <!-- <nav>
+            <div class="topnav">
+                <button href="index.html">Inicio</button>
+                <button href="#news">Iphone 12 Pro <strong>MAX</strong></button>
+                <button href="#contact">MacBook</button>
+                <button href="#about">IMac</button>
+                <button>Ver Descuentos $</button>
+                <a title="Go to page" href="https://www.apple.com/"><img src="resources/img/apple.png" /></a>
+                <a title="Ir al carro de compras" href="#"><img src="resources/img/markercar.png" /></a>
+            </div>
+            <button type="button" class="btn btn-primary">Primary</button>
+        </nav> -->
+        <nav class="navbar navbar-expand-lg navbar navbar-dark " style="background-color:black">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#" style="font-weight: bold;color: #f39200;">INICIO</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#">Iphone 12 Pro
+                                <strong>MAX</strong></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">MacBook</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">IMac</a>
+                        </li>
+
+
+                    </ul>
+                </div>
+                <div class="text-right">
+
+                    <a title="Registrar productos de inventario" style="color: white;font-weight: 500;"
+                        href="registrar_producto.html"><img src="resources/img/register.png"
+                            style="width: 40px;" />Registrar productos</a>
+                    <a title="Ir a la tienda Oficial" href="https://www.apple.com/"><img src="resources/img/apple.png"
+                            style="width: 40px;" /></a>
+                    <a title="Ir al carro de compras" href="#"><img src="resources/img/markercar.png"
+                            style="width: 40px;" /></a>
+                </div>
+            </div>
+        </nav>
+
+        <main style="background-color: black;">
+            <article style="background-color: black;">
+                <div class="container-fluid " style="padding-top: 0%;">
+                    <form class="col-6 registerForm" style="border-radius: 20px;">
+                        <h1 class="itemTitle">Datos del nuevo producto</h1>
+                        <div class="form-floating">
+                            <h5 class="itemSubtitle">Titulo o nombre del producto</h5>
+                            <input type="text" class="form-control" id="floatingInput"
+                                placeholder="Digite el titulo o nombre del producto">
+
+                        </div>
+                        <div class="form-floating">
+                            <h5 class="itemSubtitle">Categoria del Producto</h5>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Seleccione la categoria del producto</option>
+                                <option value="1">IPHONE</option>
+                                <option value="2">IMAC</option>
+                                <option value="3">MACBOOK</option>
+                            </select>
+                        </div>
+                        <div class="form-floating">
+                            <h5 class="itemSubtitle">Descripción:</h5>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+
+                        </div>
+                        <div class="form-floating">
+                            <h5 class="itemSubtitle">Precio:</h5>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">$</span>
+                                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                                <span class="input-group-text">.00</span>
+                            </div>
+                        </div>
+                        <div class="form-floating">
+                            <h5 class="itemSubtitle">Caracteristicas:</h5>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+
+                        </div>
+                        <div class="form-floating">
+                            <div >
+                                <h5 class="itemSubtitle">Por favor inserte 3 fotos del producto.<strong style="color: red;">*</strong></h5>
+                                <input class="form-control" type="file" id="formFileMultiple" multiple required>
+                              </div>
+                        </div>
+                        <br>
+                        <div class="col-12 text-center " style="padding-bottom: 20px; border-radius: 20px;">
+                            <button type="submit" style="width: 60%;" class="btn btn-warning">Registrar</button> 
+                          </div>
+                    </form>
+                </div>
+
+
+            </article>
+            <div class="text-right">
+                <a href="#"><img src="resources/img/arrow.png" /></a>
+            </div>
+        </main>
+        <footer>
+            <div class="container-fluid">
+
+                <div class="row">
+                    <div class="col">
+                        <h1>DATOS DE CONTACTO</h1>
+                        <h4>Telefono: +57 3176495021</h4>
+                        <h4>Línea gratuita: 01 8000 91 74 75</h4>
+                    </div>
+                    <div class="col">
+                        <h1>WHATSAPP <img src="resources/img/whatsappIcon.png"
+                                style="width: 25px;height: 25px;margin-top: -12px;"> </h1>
+                        <h4>Sede Cali: +57 318 732 4081</h4>
+                        <h4>Sede Medellin: +57 318 732 4587</h4>
+
+                    </div>
+
+                    <div class="col">
+                        <h1>CORREO ELECTRÓNICO</h1>
+                        <h4>tiendaapplecol@apple.co</h4>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

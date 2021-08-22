@@ -1,0 +1,51 @@
+.itemsSlide {
+  /* color: red; */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: space-between;
+  justify-content: center;
+  align-items: stretch;
+}
+h4.itemTitle {
+  color: white;
+  text-align: center;
+}
+h1.itemTitle {
+  color: #f39200;
+  text-align: center;
+}
+h5.itemSubtitle {
+  color: #f39200;
+}
+h1.itemPrice {
+  color: #f39200;
+}
+.itemInformation {
+  padding-top: 5%;
+  color: red;
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: space-between;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 25%;
+}
+p.itemInfo {
+  color: white;
+  /* text-align: justify; */
+  text-align: center;
+}
+.registerForm{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: space-around;
+  margin-left: 22%;
+  align-items: stretch;
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(224,233,148,1) 100%);
+}
